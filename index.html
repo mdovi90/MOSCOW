@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Moscow Bakers is a premium bakery, sweets, fast food, coffee and dessert shop in Sitakunda, Chattogram, Bangladesh." />
+    <meta name="keywords" content="Moscow Bakers, Bakery in Sitakunda, Fast Food in Sitakunda, Sweets in Sitakunda, Coffee in Sitakunda" />
+    <meta property="og:title" content="Moscow Bakers | Bakery, Sweets & Fast Food in Sitakunda" />
+    <meta property="og:description" content="Freshly baked. Deliciously made. Perfectly served. Order burgers, shawarma, pizza, sweets, cakes and coffee in Sitakunda." />
+    <meta name="theme-color" content="#f8b74d" />
+    <title>Moscow Bakers | Bakery, Sweets & Fast Food in Sitakunda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand" id="brand-home">
+          <div class="brand-mark">MB</div>
+          <div>
+            <strong>Moscow Bakers</strong>
+            <span>Sitakunda, Chattogram</span>
+          </div>
+        </div>
+
+        <nav class="nav" id="nav-menu">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#fast-food">Fast Food</a>
+          <a href="#sweets">Sweets</a>
+          <a href="#bakery">Bakery</a>
+          <a href="#coffee">Coffee &amp; Beverages</a>
+          <a href="#cakes">Cakes &amp; Desserts</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-tools">
+          <button class="icon-btn" aria-label="Search" id="search-button">🔎</button>
+          <button class="cart-btn" id="cart-button" aria-label="Cart">
+            🛒
+            <span id="cart-count">0</span>
+          </button>
+          <button class="hamburger" id="hamburger-button" aria-label="Toggle menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Fresh. Fast. Premium.</span>
+            <h1>Freshly Baked. Deliciously Made. Perfectly Served.</h1>
+            <p>Fast Food • Sweets • Bakery • Coffee • Lassi • Desserts</p>
+            <div class="hero-actions">
+              <button class="primary-btn" id="order-now">Order Now</button>
+              <button class="secondary-btn" id="explore-menu">Explore Menu</button>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <strong>15+</strong>
+                <span>Fast food favourites</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Customer delight</span>
+              </div>
+              <div>
+                <strong>12min</strong>
+                <span>Average prep time</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="floating-card card-one">
+              <span>Best Seller</span>
+              <strong>Chicken Burger</strong>
+              <small>৳ 290</small>
+            </div>
+            <div class="floating-card card-two">
+              <span>House Special</span>
+              <strong>Black Forest</strong>
+              <small>৳ 700</small>
+            </div>
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80" alt="Premium food platter" />
+          </div>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <div class="container">
+          <div class="section-head">
+            <p>Popular Categories</p>
+            <h2>Discover your favourites</h2>
+          </div>
+          <div class="category-grid" id="category-grid"></div>
+        </div>
+      </section>
+
+      <section class="featured-section">
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p>Featured picks</p>
+              <h2>Most loved by customers</h2>
+            </div>
+            <button class="text-link" id="featured-menu-link">View Full Menu</button>
+          </div>
+          <div class="product-grid" id="featured-grid"></div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section">
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p>Menu highlights</p>
+              <h2>Fresh menu for every craving</h2>
+            </div>
+            <div class="search-box">
+              <input id="search-input" type="text" placeholder="Search burgers, pizza, sweets..." />
+            </div>
+          </div>
+          <div id="menu-groups"></div>
+        </div>
+      </section>
+
+      <section class="offer-section">
+        <div class="container">
+          <div class="section-head">
+            <p>Special offers</p>
+            <h2>Save more, eat better</h2>
+          </div>
+          <div class="offer-grid" id="offers-grid"></div>
+        </div>
+      </section>
+
+      <section class="combo-section">
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p>Combo deals</p>
+              <h2>Perfect family and meal combos</h2>
+            </div>
+            <button class="text-link" id="combo-link">Build your combo</button>
+          </div>
+          <div class="combo-grid" id="combo-grid"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Visit us</p>
+            <h2>Fresh bakery and meal experience in Sitakunda</h2>
+            <ul class="contact-list">
+              <li><strong>Moscow Bakers</strong></li>
+              <li>Sitakunda, Chattogram, Bangladesh</li>
+              <li>Phone: +8801894839321</li>
+              <li>Opening Hours: 9:00 AM - 11:00 PM</li>
+            </ul>
+            <div class="contact-actions">
+              <a class="primary-btn small" href="tel:+8801894839321">Call Now</a>
+              <a class="secondary-btn small" href="https://wa.me/8801894839321" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a class="secondary-btn small" href="https://maps.google.com/?q=Sitakunda,Chattogram,Bangladesh" target="_blank" rel="noreferrer">Google Maps</a>
+            </div>
+          </div>
+          <div class="map-box">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Bakery interior" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <div class="brand-mark">MB</div>
+            <div>
+              <strong>Moscow Bakers</strong>
+              <span>Fresh, tasty and premium</span>
+            </div>
+          </div>
+          <p>Premium bakery, sweets, fast food, coffee and desserts serving Sitakunda, Chattogram, Bangladesh.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#fast-food">Fast Food</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#menu">Burger</a></li>
+            <li><a href="#menu">Shawarma</a></li>
+            <li><a href="#menu">Cake &amp; Desserts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Opening Hours</h4>
+          <ul>
+            <li>Mon - Sun</li>
+            <li>9:00 AM - 11:00 PM</li>
+            <li>+8801894839321</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Moscow Bakers. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <div class="modal-overlay hidden" id="product-modal"></div>
+
+    <div class="cart-overlay hidden" id="cart-overlay">
+      <aside class="cart-panel">
+        <div class="cart-header">
+          <h3>Your Cart</h3>
+          <button class="close-btn" id="close-cart">×</button>
+        </div>
+        <div id="cart-content"></div>
+      </aside>
+    </div>
+
+    <div class="success-banner hidden" id="success-banner"></div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

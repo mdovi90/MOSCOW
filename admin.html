@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Moscow Bakers</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="admin-page">
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+          <div class="brand-mark">MB</div>
+          <div>
+            <strong>Moscow Bakers</strong>
+            <small>Admin Panel</small>
+          </div>
+        </div>
+
+        <nav class="admin-nav">
+          <button class="nav-link active" data-section="dashboard">Dashboard</button>
+          <button class="nav-link" data-section="products">Products</button>
+          <button class="nav-link" data-section="orders">Orders</button>
+          <button class="nav-link" data-section="categories">Categories</button>
+          <button class="nav-link" data-section="offers">Offers</button>
+          <button class="nav-link" data-section="settings">Settings</button>
+        </nav>
+
+        <button id="logout-button" class="secondary-btn full">Log Out</button>
+      </aside>
+
+      <main class="admin-main">
+        <header class="admin-header">
+          <div>
+            <p class="eyebrow">Owner dashboard</p>
+            <h1 id="page-title">Dashboard</h1>
+          </div>
+          <div class="header-user" id="header-user">Loading...</div>
+        </header>
+
+        <div id="admin-content" class="admin-content"></div>
+      </main>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

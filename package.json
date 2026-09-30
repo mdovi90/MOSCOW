@@ -1,0 +1,29 @@
+{
+  "name": "stk-moscow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "node server.js",
+    "migrate:cloud": "node migrate-to-cloud.js",
+    "test": "node --check server.js && node --check script.js && node --check admin.js && node --check migrate-to-cloud.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "bcryptjs": "^3.0.3",
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "multer": "^2.4.0",
+    "pg": "^8.16.3",
+    "sqlite3": "^6.0.1"
+  }
+}

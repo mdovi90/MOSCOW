@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login | Moscow Bakers</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="login-page">
+    <div class="login-shell">
+      <div class="login-card">
+        <div class="login-header">
+          <div class="brand-mark">MB</div>
+          <div>
+            <p class="eyebrow">Owner Access</p>
+            <h1>Moscow Bakers</h1>
+          </div>
+        </div>
+
+        <h2>Admin Login</h2>
+        <form id="login-form" class="login-form">
+          <label>
+            <span>Email / Username</span>
+            <input type="text" id="usernameOrEmail" name="usernameOrEmail" placeholder="admin@moscowbakers.com" required />
+          </label>
+
+          <label>
+            <span>Password</span>
+            <input type="password" id="password" name="password" placeholder="••••••••" required />
+          </label>
+
+          <button type="submit" class="primary-btn full">Log In</button>
+        </form>
+        <p id="login-message" class="login-message"></p>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

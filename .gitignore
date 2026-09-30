@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+npm-debug.log*
+
+# Keep local migration sources out of deployments; do not delete these local files.
+database.sqlite
+uploads/*
+!uploads/.gitkeep
